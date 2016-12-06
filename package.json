@@ -19,7 +19,9 @@
   },
   "scripts": {
     "build": "./node_modules/node-sass/bin/node-sass ./src/scss/main.scss ./public/main.css | ./node_modules/webpack/bin/webpack.js -p ",
-    "start": "./node_modules/node-sass/bin/node-sass --watch --recursive ./src/scss --output ./public | ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --content-base=./public "
+    "start": "./node_modules/node-sass/bin/node-sass --watch --recursive ./src/scss --output ./public | ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --content-base=./public ",
+    "build-css":"node-sass --watch --recursive ./src/scss --output ./public",
+    "start-dev": "webpack-dev-server --hot --progress --colors --content-base=./public"
   },
   "keywords": [],
   "author": "pw",
